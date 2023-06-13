@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t mithulsudharsanr/jenkins-docker-hub .'
+        sh 'docker build -t mithulsudharsanr/guviapp .'
       }
     }
     stage('Login') {
@@ -19,7 +19,7 @@ pipeline {
     }
     stage('Push') {
       steps {
-        sh 'docker push mithulsudharsanr/jenkins-docker-hub'
+        sh 'docker push mithulsudharsanr/guviapp'
       }
     }
   }
